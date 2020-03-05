@@ -1,2 +1,2 @@
 # rasa run
-# curl -H "Content-Tye: application/json" --data '{"message": "sad"}' http://localhost:5005/webhooks/rest/webhook
+# curl -H "Content-Tpye: application/json" --data '{"message": "sad"}' http://localhost:5005/webhooks/rest/webhook

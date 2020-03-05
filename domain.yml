@@ -6,6 +6,26 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - get_weather
+  - my_name_is
+
+actions:
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+  - utter_send_weather
+  - utter_send_name
+
+entities:
+  - name
+
+slots:
+  name:
+    type: text
+#    auto_fill: false
 
 responses:
   utter_greet:
@@ -26,6 +46,12 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_send_weather:
+  - text: "weather is good"
+
+  utter_send_name:
+  - text: "hi {name}"
 
 session_config:
   session_expiration_time: 60

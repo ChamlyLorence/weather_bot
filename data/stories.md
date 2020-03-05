@@ -29,3 +29,19 @@
 ## bot challenge
 * bot_challenge
   - utter_iamabot
+
+## happy path
+* greet
+  - utter_greet
+* get_weather
+  - utter_send_weather
+
+## get_name
+* my_name_is{"name": "Ali"}
+  - slot{"name": "Ali"}
+  - utter_greet
+
+## get_name2
+* my_name_is{"name": "Ali"}
+  - slot{"name": "Ali"}
+  - utter_send_name

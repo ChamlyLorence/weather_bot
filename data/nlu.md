@@ -54,3 +54,22 @@
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+
+## intent:get_weather
+- what's the weather
+- what's the weather in Czech Republic
+- what is the weather
+- what is the weather in New Zealand
+- whats the weather
+- what is the weather like
+- how is the weather
+- how's the weather
+- hows the weather
+
+## intent:my_name_is
+- I am [Ali](name)
+- I am [Jack](name)
+- I'm [Steven](name)
+- im [Jack](name)
+- I am [Pierce Brosnan](name)
+- My name is [Martin Novak](name)
