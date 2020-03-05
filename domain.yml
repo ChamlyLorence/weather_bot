@@ -18,6 +18,7 @@ actions:
   - utter_iamabot
   - utter_send_weather
   - utter_send_name
+  - action_help
 
 entities:
   - name

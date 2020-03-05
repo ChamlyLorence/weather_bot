@@ -39,9 +39,23 @@
 ## get_name
 * my_name_is{"name": "Ali"}
   - slot{"name": "Ali"}
-  - utter_greet
+  - utter_send_name
+  - action_help
 
 ## get_name2
 * my_name_is{"name": "Ali"}
   - slot{"name": "Ali"}
   - utter_send_name
+  - action_help
+
+## get_name3
+* my_name_is{"name": "Ali"}
+  - slot{"name": "Ali"}
+  - utter_send_name
+  - action_help
+
+## get_name4
+* my_name_is{"name": "Ali"}
+  - slot{"name": "Ali"}
+  - utter_send_name
+  - action_help
