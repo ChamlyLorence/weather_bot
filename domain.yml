@@ -6,7 +6,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - get_weather
+  - find_weather
   - my_name_is
 
 actions:
@@ -16,17 +16,20 @@ actions:
   - utter_happy
   - utter_goodbye
   - utter_iamabot
-  - utter_send_weather
   - utter_send_name
+  - utter_chech
   - action_help
+  - action_send_weather
 
 entities:
   - name
+  - location
 
 slots:
   name:
     type: text
-#    auto_fill: false
+  location:
+    type: text
 
 responses:
   utter_greet:
@@ -48,8 +51,8 @@ responses:
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
-  utter_send_weather:
-  - text: "weather is good"
+  utter_chech:
+  - text: "let me check"
 
   utter_send_name:
   - text: "hi {name}"

@@ -20,6 +20,17 @@ class ActionHelp(Action):
 
     def run(self, dispatcher,tracker,domain):
         name = tracker.get_slot('name')
-        dispatcher.utter_message(text="Hello World! {}".format(name))
+        dispatcher.utter_message(text="What can i do for you {}".format(name))
+
+        return []
+
+class ActionSendWeather(Action):
+
+    def name(self):
+        return "action_send_weather"
+
+    def run(self, dispatcher,tracker,domain):
+        locaton = tracker.get_slot('location')
+        dispatcher.utter_message(text="weather in  {} good".format(locaton))
 
         return []

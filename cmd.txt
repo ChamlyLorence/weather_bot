@@ -1,2 +1,3 @@
 # rasa run
-# curl -H "Content-Tpye: application/json" --data '{"message": "sad"}' http://localhost:5005/webhooks/rest/webhook
+# curl -H "Content-Tpye: application/json" --data '{"sender": "user1", "message": "hello"}' http://localhost:5005/webhooks/rest/webhook
+#rasa run actions - this use activate actions end point server

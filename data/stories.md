@@ -30,12 +30,33 @@
 * bot_challenge
   - utter_iamabot
 
-## happy path
+## check weather1
 * greet
   - utter_greet
-* get_weather
-  - utter_send_weather
+* find_weather{"location":"London"}
+  - utter_chech
+  - slot{"location":"London"}
+  - action_send_weather
 
+## check weather2
+* my_name_is{"name": "Ali"}
+  - utter_send_name
+* find_weather{"location":"London"}
+  - utter_chech
+  - slot{"location":"London"}
+  - action_send_weather
+
+## check weather3
+* my_name_is{"name": "Ali"}
+  - slot{"name": "Ali"}
+  - utter_send_name
+  - action_help
+* find_weather{"location":"London"}
+  - utter_chech
+  - slot{"location":"London"}
+  - action_send_weather
+* goodbye
+ - utter_goodbye
 ## get_name
 * my_name_is{"name": "Ali"}
   - slot{"name": "Ali"}
